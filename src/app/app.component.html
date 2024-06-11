@@ -11,6 +11,16 @@
 
 <div *transloco="let t">
   <p>APP.NAME: <span>{{ t('APP.NAME') }}</span></p>
+  <p>APP.LAST_NAME: <span>{{ t('APP.LAST_NAME') }}</span></p>
+  <!--  t(COMMENT) -->
+</div>
+
+<div *transloco="let t; read: 'Read'">
+  <!--  t(COMMENT) -->
+</div>
+
+<div *transloco="let t; prefix: 'Prefix'">
+  <!--  t(COMMENT) -->
 </div>
 
 <p>End</p>
